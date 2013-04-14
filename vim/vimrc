@@ -1,0 +1,81 @@
+" Misc configuration
+set hidden
+set number
+set showmatch
+set matchtime=5
+set encoding=utf-8
+set history=1000
+set timeoutlen=250
+set expandtab
+set smarttab
+set shiftwidth=2
+set tabstop=2
+set smartindent
+set autoindent
+set wrap
+set ruler
+set nobackup
+set nowritebackup
+set noswapfile
+
+let mapleader=","
+
+" Vundle specific configuration
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" Let Vundle manage Vundle
+Bundle 'gmarik/vundle'
+
+" Manage other bundles too
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'scrooloose/nerdtree'
+Bundle 'tpope/vim-surround.git'
+Bundle 'tpope/vim-rake.git'
+Bundle 'tpope/vim-rails.git'
+Bundle 'pangloss/vim-javascript'
+Bundle 'scrooloose/nerdcommenter.git'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'scrooloose/syntastic.git'
+Bundle 'godlygeek/tabular.git'
+Bundle 'ervandew/supertab'
+Bundle 'vim-scripts/rubycomplete.vim'
+Bundle 'xenoterracide/html.vim'
+Bundle 'instant-markdown.vim'
+Bundle 'delimitMate.vim'
+Bundle 'tpope/vim-endwise.git'
+Bundle 'nono/vim-handlebars.git'
+
+" Enable filetype plugins                                                                                                                       
+filetype plugin on                                                                                                                              
+filetype indent on    
+
+" NERDTree configuration
+autocmd vimenter * if !argc() | NERDTree | endif
+
+" Colorscheme configuration
+colorscheme zenburn
+set background=dark
+syntax enable
+
+" Powerline configuration
+let g:Powerline_symbols='fancy'
+let g:Powerline_colorscheme='zenburn'
+
+" Supertab configuration
+let g:SuperTabDefaultCompletionType='<C-X><C-O>'
+
+" Rubycomplete configuration
+autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
+autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
+autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
+autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
+highlight Pmenu ctermbg=238 gui=bold
+
+" Some keys mappings 
+noremap <Leader>s :w<CR>
+inoremap <Leader>s <ESC>:w<CR>i
+inoremap <Leader>se <ESC>:w<CR>

@@ -1,0 +1,18 @@
+# bash_aliases
+
+# Bundle aliases
+alias b='bundle'
+alias bx='bundle exec'
+alias bi='bundle install'
+alias bu='bundle update'
+
+# Rails aliases
+alias r='bundle exec rails'
+alias rs='bundle exec rails server'
+alias rc='bundle exec rails console'
+alias rg='bundle exec rails generate'
+alias rd='bundle exec rails destroy'
+
+# Rake aliases
+alias rake='bundle exec rake'
+alias rakep='bundle exec rakep'

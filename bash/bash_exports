@@ -1,0 +1,10 @@
+# bash_exports
+
+# Make vim the default editor.
+export EDITOR="vim"
+
+# Always include rubygems while executing ruby scripts.
+export RUBYOPT="rubygems"
+
+# Node Modules
+export NODE_PATH="/usr/local/lib/node_modules"

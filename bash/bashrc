@@ -1,0 +1,4 @@
+# bashrc
+
+# Reload the profile whenever starting a new session.
+[ -n "$PS1" ] && source ~/.bash_profile

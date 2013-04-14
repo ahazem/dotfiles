@@ -1,0 +1,37 @@
+# bash_profile
+
+declare -a files=(
+  $HOME/.rvm/scripts/rvm # Load RVM into a shell session *as a function*
+  $HOME/.dotfiles/bash/bash_exports # Exports
+  $HOME/.dotfiles/bash/bash_aliases # Aliases
+  $HOME/.dotfiles/bash/bash_prompt # Custom bash prompt
+  $HOME/.dotfiles/bash/bash_paths  # Path modifications
+  $HOME/.tmuxinator/scripts/tmuxinator # Loading Tmuxinator into a shell session
+)
+
+# If these files are readable, source them
+for index in ${!files[*]}
+do
+  if [[ -r ${files[$index]} ]]; then
+    source ${files[$index]}
+  fi
+done
+
+unset files
+
+# Only use `brew` after it has been added to the PATH
+# bash_completion_path="$(brew --prefix)/etc/bash_completion"
+#
+# Source Bash completion (installed via Homebrew)
+# if [[ -r $bash_completion_path ]]; then
+#   source $bash_completion_path
+# fi
+
+# This allows using Prolog graphics if you use Terminal.app
+# if [ -z "$DISPLAY" ]; then export DISPLAY=:0; fi
+
+# Vim aliases
+alias vim='mvim -v'
+
+# tmux
+[ -n "$TMUX" ] && export TERM=screen-256color

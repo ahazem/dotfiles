@@ -48,6 +48,7 @@ Bundle 'instant-markdown.vim'
 Bundle 'delimitMate.vim'
 Bundle 'tpope/vim-endwise.git'
 Bundle 'nono/vim-handlebars.git'
+Bundle 'mattn/zencoding-vim.git'
 
 " Enable filetype plugins                                                                                                                       
 filetype plugin on                                                                                                                              
@@ -79,3 +80,7 @@ highlight Pmenu ctermbg=238 gui=bold
 noremap <Leader>s :w<CR>
 inoremap <Leader>s <ESC>:w<CR>i
 inoremap <Leader>se <ESC>:w<CR>
+
+" Zencoding mappings
+let g:user_zen_expandabbr_key = '<Leader>x'
+let g:use_zen_complete_tag = 1

@@ -2,3 +2,5 @@
 
 # Reload the profile whenever starting a new session.
 [ -n "$PS1" ] && source ~/.bash_profile
+
+PATH=$PATH:$HOME/.go/bin # Add RVM to PATH for scripting

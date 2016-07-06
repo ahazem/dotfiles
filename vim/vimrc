@@ -49,6 +49,14 @@ Bundle 'delimitMate.vim'
 Bundle 'tpope/vim-endwise.git'
 Bundle 'nono/vim-handlebars.git'
 Bundle 'mattn/zencoding-vim.git'
+Bundle 'dsawardekar/ember.vim'
+Bundle 'honza/dockerfile.vim'
+Bundle 'fatih/vim-go.git'
+Bundle 'Shougo/neocomplcache'
+Bundle 'Shougo/neosnippet'
+Bundle 'Shougo/neosnippet-snippets'
+Bundle 'morhetz/gruvbox'
+Bundle 'kien/ctrlp.vim'
 
 " Enable filetype plugins                                                                                                                       
 filetype plugin on                                                                                                                              
@@ -58,9 +66,9 @@ filetype indent on
 autocmd vimenter * if !argc() | NERDTree | endif
 
 " Colorscheme configuration
-colorscheme zenburn
+colorscheme gruvbox
 set background=dark
-syntax enable
+syntax on 
 
 " Powerline configuration
 let g:Powerline_symbols='fancy'
@@ -81,6 +89,23 @@ noremap <Leader>s :w<CR>
 inoremap <Leader>s <ESC>:w<CR>i
 inoremap <Leader>se <ESC>:w<CR>
 
+" Copy/Paste mappings
+noremap <Leader>y :.w !pbcopy<CR><CR>
+noremap <Leader>p :r !pbpaste<CR>
+vmap <Leader>y :w !pbcopy<CR><CR>
+
+" ctrpl mappings
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
 " Zencoding mappings
 let g:user_zen_expandabbr_key = '<Leader>x'
 let g:use_zen_complete_tag = 1
+let g:user_zen_emmet_mode = 'a'
+
+" Use neosnippet instead of utilsnips which is broken on older versions of
+" python (it seems)
+let g:go_snippet_engine = "neosnippet"
+
+" Go mappings
+autocmd FileType go nmap <Leader>r <Plug>(go-run)

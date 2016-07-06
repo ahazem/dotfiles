@@ -8,3 +8,10 @@ export RUBYOPT="rubygems"
 
 # Node Modules
 export NODE_PATH="/usr/local/lib/node_modules"
+
+# Go
+export GOPATH="/Users/ahazem/.go"
+export GOBIN="/Users/ahazem/.go/bin"
+
+# Rails Assets
+export DEV_ASSET_DEBUG="false"

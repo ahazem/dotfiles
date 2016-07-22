@@ -19,3 +19,6 @@ alias rakep='bundle exec rakep'
 
 # PostgreSQL aliases
 alias pg='pg_ctl -D /usr/local/var/postgres/ -l /usr/local/var/postgres/server.log'
+
+# Sublime Text
+alias sublime='~/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'

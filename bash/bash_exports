@@ -16,6 +16,10 @@ export GOBIN="/Users/ahazem/.go/bin"
 # Rails Assets
 export DEV_ASSET_DEBUG="false"
 
+# Local
+export API_ADDRESS="http://localhost:9090"
+export ASSETS_ADDRESS="http://localhost:9292"
+
 # Python (Locale Issues)
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8

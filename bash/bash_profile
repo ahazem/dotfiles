@@ -35,4 +35,4 @@ fi
 PATH=$PATH:$GOPATH/bin:$HOME/desktop/dev/jura/play-2.1.5:/usr/local/mysql/bin
 
 # added by Anaconda2 4.1.1 installer
-export PATH="//anaconda/bin:$PATH"
+# export PATH="//anaconda/bin:$PATH"

@@ -17,6 +17,7 @@ set ruler
 set nobackup
 set nowritebackup
 set noswapfile
+set backspace=indent,eol,start
 
 let mapleader=","
 
@@ -24,46 +25,46 @@ let mapleader=","
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/vundle.vim/
 call vundle#rc()
 
 " Let Vundle manage Vundle
-Bundle 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 
 " Manage other bundles too
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'scrooloose/nerdtree'
-Bundle 'tpope/vim-surround.git'
-Bundle 'tpope/vim-rake.git'
-Bundle 'tpope/vim-rails.git'
-Bundle 'pangloss/vim-javascript'
-Bundle 'scrooloose/nerdcommenter.git'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'scrooloose/syntastic.git'
-Bundle 'godlygeek/tabular.git'
-Bundle 'ervandew/supertab'
-Bundle 'vim-scripts/rubycomplete.vim'
-Bundle 'xenoterracide/html.vim'
-Bundle 'instant-markdown.vim'
-Bundle 'delimitMate.vim'
-Bundle 'tpope/vim-endwise.git'
-Bundle 'nono/vim-handlebars.git'
-Bundle 'mattn/zencoding-vim.git'
-Bundle 'dsawardekar/ember.vim'
-Bundle 'honza/dockerfile.vim'
-Bundle 'fatih/vim-go.git'
-Bundle 'Shougo/neocomplcache'
-Bundle 'Shougo/neosnippet'
-Bundle 'Shougo/neosnippet-snippets'
-Bundle 'morhetz/gruvbox'
-Bundle 'kien/ctrlp.vim'
+Plugin 'Lokaltog/vim-powerline'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-surround.git'
+Plugin 'tpope/vim-rake.git'
+Plugin 'tpope/vim-rails.git'
+Plugin 'pangloss/vim-javascript'
+Plugin 'scrooloose/nerdcommenter.git'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'scrooloose/syntastic.git'
+Plugin 'godlygeek/tabular.git'
+Plugin 'ervandew/supertab'
+Plugin 'vim-scripts/rubycomplete.vim'
+Plugin 'xenoterracide/html.vim'
+Plugin 'instant-markdown.vim'
+Plugin 'delimitMate.vim'
+Plugin 'tpope/vim-endwise.git'
+Plugin 'nono/vim-handlebars.git'
+Plugin 'mattn/emmet-vim.git'
+Plugin 'dsawardekar/ember.vim'
+Plugin 'honza/dockerfile.vim'
+Plugin 'fatih/vim-go.git'
+Plugin 'Shougo/neocomplcache'
+Plugin 'Shougo/neosnippet'
+Plugin 'Shougo/neosnippet-snippets'
+Plugin 'morhetz/gruvbox'
+Plugin 'kien/ctrlp.vim'
 
 " Enable filetype plugins                                                                                                                       
 filetype plugin on                                                                                                                              
 filetype indent on    
 
 " NERDTree configuration
-autocmd vimenter * if !argc() | NERDTree | endif
+autocmd VimEnter * if !argc() | NERDTree | endif
 
 " Colorscheme configuration
 colorscheme gruvbox

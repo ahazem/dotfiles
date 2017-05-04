@@ -3,6 +3,7 @@
 	email = ahazemm@gmail.com
 [core]
 	excludesfile = /Users/ahazem/.gitignore
+	autocrlf = input
 [credential]
 	helper = osxkeychain
 [alias]

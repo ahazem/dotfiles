@@ -23,3 +23,6 @@ export ASSETS_ADDRESS="http://localhost:9292"
 # Python (Locale Issues)
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+
+# Vault
+export VAULT_ADDR='http://127.0.0.1:8200'

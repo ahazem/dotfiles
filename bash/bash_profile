@@ -8,7 +8,6 @@ declare -a files=(
   $HOME/.dotfiles/bash/bash_aliases # Aliases
   $HOME/.dotfiles/bash/bash_prompt # Custom bash prompt
   #$HOME/.dotfiles/bash/bash_paths  # Path modifications
-  $HOME/.tmuxinator/scripts/tmuxinator # Loading Tmuxinator into a shell session
 )
 
 # If these files are readable, source them
@@ -32,7 +31,4 @@ fi
 # tmux
 [ -n "$TMUX" ] && export TERM=screen-256color
 
-PATH=$PATH:$GOPATH/bin:$HOME/desktop/dev/jura/play-2.1.5:/usr/local/mysql/bin
-
-# added by Anaconda2 4.1.1 installer
-# export PATH="//anaconda/bin:$PATH"
+export PATH="$(python -m site --user-base)/bin:${PATH}"

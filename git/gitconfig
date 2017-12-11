@@ -1,6 +1,7 @@
 [user]
 	name = Ahmed Hazem
 	email = ahazemm@gmail.com
+	signingKey = B8ECDE0D7EF677F7
 [core]
 	excludesfile = /Users/ahazem/.gitignore
 	autocrlf = input
@@ -15,3 +16,7 @@
 	required = true
 	clean = git media clean %f
 	smudge = git media smudge %f
+[gpg]
+	program = gpg
+[commit]
+	gpgsign = true

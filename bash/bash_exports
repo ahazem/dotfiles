@@ -19,3 +19,6 @@ export DEV_ASSET_DEBUG="false"
 # Python (Locale Issues)
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+
+# ElasticSearch
+export ES_HOME="~/documents/elasticsearch"

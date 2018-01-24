@@ -31,4 +31,4 @@ fi
 # tmux
 [ -n "$TMUX" ] && export TERM=screen-256color
 
-export PATH="$(python -m site --user-base)/bin:${PATH}"
+export PATH="$ES_HOME/bin:$(python -m site --user-base)/bin:${PATH}"

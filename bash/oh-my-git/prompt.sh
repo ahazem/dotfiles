@@ -9,7 +9,7 @@ if [ -n "${BASH_VERSION}" ]; then
     # Use our own prompt when not in git (and for the second line as well)
     source $HOME/.dotfiles/bash/bash_prompt
 
-    : ${omg_ungit_prompt:=$PS1}
+    : ${omg_ungit_prompt:=$PS2}
     : ${omg_second_line:=$PS1}
 
     : ${omg_is_a_git_repo_symbol:=''}
@@ -164,7 +164,7 @@ if [ -n "${BASH_VERSION}" ]; then
                 fi
             fi
             prompt+=$(enrich_append ${is_on_a_tag} "${omg_is_on_a_tag_symbol} ${tag_at_current_commit}" "${black_on_red}")
-            prompt+="${omg_last_symbol_color}${reset}\n"
+            prompt+="${omg_last_symbol_color}${reset} "
             prompt+="$(eval_prompt_callback_if_present)"
             prompt+="${omg_second_line}"
         else

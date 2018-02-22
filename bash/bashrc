@@ -3,7 +3,9 @@
 # Reload the profile whenever starting a new session.
 [ -n "$PS1" ] && source ~/.bash_profile
 
-PATH=$PATH:$HOME/.go/bin # Add RVM to PATH for scripting
+GOPATH=/usr/local/go
+GOBIN=$GOPATH/bin
+PATH=$PATH:$HOME/.go/bin:$GOBIN # Add RVM to PATH for scripting
 
 # added by travis gem
 [ -f /Users/ahmed.hemdan/.travis/travis.sh ] && source /Users/ahmed.hemdan/.travis/travis.sh

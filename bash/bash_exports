@@ -1,17 +1,14 @@
 # bash_exports
 
 # Make vim the default editor.
-export EDITOR="vim"
-
-# Always include rubygems while executing ruby scripts.
-# export RUBYOPT=""
+export EDITOR="atom"
 
 # Node Modules
 export NODE_PATH="/usr/local/lib/node_modules"
 
 # Go
-# export GOPATH="/Users/~/.go"
-# export GOBIN="/Users/~/.go/bin"
+export GOPATH=/usr/local/go
+export GOBIN=/usr/local/go/bin
 
 # Rails Assets
 export DEV_ASSET_DEBUG="false"
@@ -22,3 +19,6 @@ export LANG=en_US.UTF-8
 
 # ElasticSearch
 export ES_HOME="~/documents/elasticsearch"
+
+# GH
+export GH_BASE_DIR="$HOME/documents/dev"

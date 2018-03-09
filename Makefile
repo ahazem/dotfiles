@@ -1,7 +1,7 @@
-default: link-folder 
+default: link-folder
 
 link-folder:
-	ln -s . $HOME/.dotfiles
+	ln -s $(PWD) $(HOME)/.dotfiles
 
 link-dotfiles:
 	./dotfiles.sh

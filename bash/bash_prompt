@@ -13,7 +13,7 @@ WHITE=$(tput setaf 254)
 style_path="\[${RESET}${RED}\]"
 style_chars="\[${RESET}${WHITE}\]"
 style_rvm="\[${RESET}${BOLD}${ORANGE}\]"
-style_branch="\[${RESET}${GREEN}\]"
+style_branch="${GREEN}"
 
 get_rvm() {
   local rb=`rvm-prompt v p g`
@@ -42,10 +42,10 @@ get_git_branch() {
   branch_name="(unknown)"
  
   printf $branch_name
- }
+}
  
- # Git status information
- prompt_git() {
+# Git status information
+prompt_git() {
   local git_info git_state uc us ut st
  
   if ! is_git_repo || is_git_dir; then
@@ -82,13 +82,13 @@ get_git_branch() {
   fi
  
   printf "${WHITE} on ${style_branch}${git_info}"
- }
+}
 
 # Build the prompt
 PS1="\[\033]0;\w\007\]"
 PS1+="\n" # Newline
 PS1+="${style_path}\w" # Working directory
-PS1+="$(prompt_git)" # Git details
+PS1+="\$(prompt_git)" # Git details
 PS1+="$(get_rvm)"
 PS1+="${style_chars}"
 PS1+="\n" # Newline

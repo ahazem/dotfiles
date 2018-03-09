@@ -57,7 +57,8 @@ Plugin 'fatih/vim-go.git'
 Plugin 'Shougo/neocomplcache'
 Plugin 'Shougo/neosnippet'
 Plugin 'Shougo/neosnippet-snippets'
-Plugin 'morhetz/gruvbox'
+Plugin 'arcticicestudio/nord-vim'
+"Plugin 'morhetz/gruvbox'
 Plugin 'kien/ctrlp.vim'
 
 " Enable filetype plugins                                                                                                                       
@@ -68,8 +69,8 @@ filetype indent on
 autocmd VimEnter * if !argc() | NERDTree | endif
 
 " Colorscheme configuration
-colorscheme gruvbox
-set background=dark
+colorscheme nord 
+"set background=dark
 syntax on 
 
 " Powerline configuration

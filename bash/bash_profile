@@ -4,7 +4,7 @@ declare -a files=(
   $HOME/.rvm/scripts/rvm # Load RVM into a shell session *as a function*
   $HOME/.dotfiles/bash/bash_exports # Exports
   $HOME/.dotfiles/bash/bash_aliases # Aliases
-  $HOME/.dotfiles/bash/oh-my-git/prompt.sh # Use oh-my-git as a prompt
+  $HOME/.dotfiles/bash/bash_prompt # Prompt
   $HOME/documents/dev/github.com/ahazem/gh/bash/gh.bash # Use gh to move around github repos
   $HOME/documents/dev/github.com/ahazem/gh/completions/gh.bash
   #$HOME/.dotfiles/bash/bash_paths  # Path modifications

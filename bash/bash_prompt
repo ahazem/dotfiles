@@ -85,12 +85,16 @@ prompt_git() {
   printf "${WHITE} on ${style_branch}${git_info}"
 }
 
-# Build the prompt
-PS1="\[\033]0;\w\007\]"
-PS1+="\n" # Newline
-PS1+="${style_path}\w" # Working directory
-PS1+="\$(prompt_git)" # Git details
-PS1+="$(get_rvm)"
-PS1+="${style_chars}"
-PS1+="\n" # Newline
-PS1+="${style_chars}\$ \[${RESET}\]" # and reset color
+ps1_print() {
+  # Build the prompt
+  PS1="\[\033]0;\w\007\]"
+  PS1+="\n" # Newline
+  PS1+="${style_path}\w" # Working directory
+  PS1+="\$(prompt_git)" # Git details
+  PS1+="$(get_rvm)"
+  PS1+="${style_chars}"
+  PS1+="\n" # Newline
+  PS1+="${style_chars}\$ \[${RESET}\]" # and reset color
+}
+
+PROMPT_COMMAND="ps1_print"

@@ -16,8 +16,9 @@ style_rvm="\[${RESET}${BOLD}${ORANGE}\]"
 style_branch="${GREEN}"
 
 get_rvm() {
-  local rb=`rvm-prompt v p g`
-
+  local rb
+  
+  rb=`rvm-prompt v p g`
   printf " ${style_chars}using ${style_rvm}${rb}"
 }
 

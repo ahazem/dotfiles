@@ -23,7 +23,7 @@ unset files
 # Only use `brew` after it has been added to the PATH
 bash_completion_path="$(brew --prefix)/etc/bash_completion"
 
-# Source Bash completion (installed via Homebrew)
+# Source bash completion path (installed via Homebrew)
 if [[ -r $bash_completion_path ]]; then
   source $bash_completion_path
 fi
@@ -31,4 +31,5 @@ fi
 # tmux
 [ -n "$TMUX" ] && export TERM=screen-256color
 
-export PATH="$ES_HOME/bin:$(python -m site --user-base)/bin:${PATH}"
+# Add elasticsearch home to path
+export PATH="$ES_HOME/bin:${PATH}"

@@ -6,6 +6,7 @@ link() {
   ln -fs "${dir}/${1}" "${HOME}/${2}"
 }
 
+link "misc/.editorconfig" ".editorconfig"
 link "bash/bashrc" ".bashrc"
 link "bash/bash_profile" ".bash_profile"
 link "gem/gemrc" ".gemrc"

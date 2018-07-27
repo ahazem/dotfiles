@@ -38,7 +38,10 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-surround.git'
 Plugin 'tpope/vim-rake.git'
 Plugin 'tpope/vim-rails.git'
+
+" JavaScript related packages (React / JSX)
 Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 Plugin 'scrooloose/nerdcommenter.git'
 "Plugin 'kchmck/vim-coffee-script'
 Plugin 'scrooloose/syntastic.git'
@@ -119,6 +122,8 @@ let g:CtrlSpaceLoadLastWorkspaceOnStart = 1
 let g:CtrlSpaceSaveWorkspaceOnSwitch = 1
 let g:CtrlSpaceSaveWorkspaceOnExit = 1
 let g:CtrlSpaceUseMouseAndArrowsInTerm = 1
+
+let g:CtrlSpaceFileEngine = ''
 
 " Use higher search timing to ensure responsiveness
 let g:CtrlSpaceSearchTiming = 500

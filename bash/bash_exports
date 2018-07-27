@@ -7,7 +7,7 @@ export EDITOR="vim"
 export NODE_PATH="/usr/local/lib/node_modules"
 
 # Go
-export GOPATH=/usr/local/go
+export GOPATH=~/go
 export GOBIN=/usr/local/go/bin
 
 # Rails Assets

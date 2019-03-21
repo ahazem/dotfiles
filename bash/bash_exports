@@ -25,3 +25,6 @@ export GH_BASE_DIR="$HOME/documents/dev"
 
 # PG
 export PG_PATH="/Applications/Postgres.app/Contents/Versions/latest/bin"
+
+# GPG
+export GPG_TTY=$(tty)

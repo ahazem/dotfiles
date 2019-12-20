@@ -8,7 +8,7 @@ export NODE_PATH="/usr/local/lib/node_modules"
 
 # Go
 export GOPATH=~/go
-export GOBIN=/usr/local/go/bin
+export GOBIN=/usr/local/bin
 
 # Rails Assets
 export DEV_ASSET_DEBUG="false"

@@ -39,3 +39,6 @@ export PATH="$ES_HOME/bin:${PATH}"
 
 # Add PG to the path
 export PATH="${PATH}:/Applications/Postgres.app/Contents/Versions/latest/bin"
+
+# Silence the deperacation warning for bash.
+export BASH_SILENCE_DEPRECATION_WARNING=1

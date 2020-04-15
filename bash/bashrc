@@ -5,5 +5,10 @@
 
 PATH=$PATH:$GOBIN # Add RVM to PATH for scripting
 
-# added by travis gem
-[ -f /Users/ahmed.hemdan/.travis/travis.sh ] && source /Users/ahmed.hemdan/.travis/travis.sh
+# Added by serverless binary installer
+export PATH="$HOME/.serverless/bin:$PATH"
+
+# Added by nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"

@@ -5,10 +5,11 @@ declare -a files=(
   $HOME/.dotfiles/bash/bash_exports # Exports
   $HOME/.dotfiles/bash/bash_aliases # Aliases
   $HOME/.dotfiles/bash/bash_prompt # Prompt
-  $HOME/documents/dev/github.com/ahazem/gh/bash/gh.bash # Use gh to move around github repos
-  $HOME/documents/dev/github.com/ahazem/gh/completions/gh.bash
-  #$HOME/.dotfiles/bash/bash_paths  # Path modifications
+  $HOME/documents/dev/github.com/jdxcode/gh/bash/gh.bash # Use gh to move around github repos
+  $HOME/documents/dev/github.com/jdxcode/gh/completions/gh.bash
 )
+
+  #$HOME/.dotfiles/bash/bash_paths  # Path modifications
 
 # If these files are readable, source them
 for index in ${!files[*]}
@@ -40,5 +41,11 @@ export PATH="$ES_HOME/bin:${PATH}"
 # Add PG to the path
 export PATH="${PATH}:/Applications/Postgres.app/Contents/Versions/latest/bin"
 
-# Silence the deperacation warning for bash.
+# Silence the deperacation warning for bash
 export BASH_SILENCE_DEPRECATION_WARNING=1
+
+# Added by serverless binary installer
+export PATH="$HOME/.serverless/bin:$PATH"
+
+# Initialize nodenv
+eval "$(nodenv init -)"

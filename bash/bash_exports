@@ -17,14 +17,8 @@ export DEV_ASSET_DEBUG="false"
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-# ElasticSearch
-export ES_HOME="~/documents/elasticsearch"
-
 # GH
 export GH_BASE_DIR="$HOME/documents/dev"
-
-# PG
-export PG_PATH="/Applications/Postgres.app/Contents/Versions/latest/bin"
 
 # GPG
 export GPG_TTY=$(tty)

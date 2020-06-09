@@ -32,15 +32,6 @@ fi
 # tmux
 [ -n "$TMUX" ] && export TERM=screen-256color
 
-# Add python to path (for awsudo)
-export PATH="$(python -m site --user-base)/bin:${PATH}"
-
-# Add elasticsearch home to path
-export PATH="$ES_HOME/bin:${PATH}"
-
-# Add PG to the path
-export PATH="${PATH}:/Applications/Postgres.app/Contents/Versions/latest/bin"
-
 # Silence the deperacation warning for bash
 export BASH_SILENCE_DEPRECATION_WARNING=1
 

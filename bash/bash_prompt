@@ -12,15 +12,15 @@ WHITE=$(tput setaf 254)
 
 style_path="\[${RESET}${RED}\]"
 style_chars="\[${RESET}${WHITE}\]"
-style_rvm="\[${RESET}${BOLD}${ORANGE}\]"
+#style_rvm="\[${RESET}${BOLD}${ORANGE}\]"
 style_branch="${GREEN}"
 
-get_rvm() {
-  local rb
-  
-  rb=`rvm-prompt v p g`
-  printf " ${style_chars}using ${style_rvm}${rb}"
-}
+#get_rvm() {
+#  local rb
+#  
+#  rb=`rvm-prompt v p g`
+#  printf " ${style_chars}using ${style_rvm}${rb}"
+#}
 
 is_git_repo() {
   $(git rev-parse --is-inside-work-tree &> /dev/null)
@@ -91,8 +91,8 @@ ps1_print() {
   PS1+="\n" # Newline
   PS1+="${style_path}\w" # Working directory
   PS1+="\$(prompt_git)" # Git details
-  PS1+="$(get_rvm)"
-  PS1+="${style_chars}"
+  # PS1+="$(get_rvm)"
+  # PS1+="${style_chars}"
   PS1+="\n" # Newline
   PS1+="${style_chars}\$ \[${RESET}\]" # and reset color
 }

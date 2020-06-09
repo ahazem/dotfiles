@@ -1,9 +1,12 @@
 # bashrc
 
-# Reload the profile whenever starting a new session.
+# Reload the profile whenever starting a new session
 [ -n "$PS1" ] && source ~/.bash_profile
 
 PATH=$PATH:$GOBIN # Add RVM to PATH for scripting
 
 # Added by serverless binary installer
 export PATH="$HOME/.serverless/bin:$PATH"
+
+# Always start ssh-agent
+[ -z "$SSH_AUTH_SOCK" ] && eval "$(ssh-agent -s)"

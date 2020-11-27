@@ -1,3 +1,3 @@
 # Dotfiles
 
-My OS X dotfiles.
+My macOS dotfiles.

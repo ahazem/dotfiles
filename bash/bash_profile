@@ -36,7 +36,7 @@ fi
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # Added by serverless binary installer
-export PATH="$HOME/.serverless/bin:$PATH"
+export PATH="$HOME/.serverless/bin:/usr/local/sbin:$PATH"
 
 # Initialize nodenv
 eval "$(nodenv init -)"

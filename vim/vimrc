@@ -34,7 +34,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 " Manage other bundles too
 "Plugin 'Lokaltog/vim-powerline'
-"Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-surround.git'
 Plugin 'tpope/vim-rake.git'
 Plugin 'tpope/vim-rails.git'
@@ -67,17 +67,17 @@ Plugin 'vim-ctrlspace/vim-ctrlspace'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
-" Enable filetype plugins                                                                                                                       
+" Enable filetype plugins
 filetype plugin on
-filetype indent on    
+filetype indent on
 
 " NERDTree configuration
-"autocmd VimEnter * if !argc() | NERDTree | endif
+autocmd VimEnter * if !argc() | NERDTree | endif
 
 " Colorscheme configuration
-colorscheme nord 
+colorscheme nord
 "set background=dark
-syntax on 
+syntax on
 
 " Powerline configuration
 "let g:Powerline_symbols='fancy'
@@ -93,7 +93,7 @@ autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
 autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 highlight Pmenu ctermbg=238 gui=bold
 
-" Some keys mappings (save + save and exit) 
+" Some keys mappings (save + save and exit)
 noremap <Leader>s :w<CR>
 inoremap <Leader>s <ESC>:w<CR>i
 inoremap <Leader>se <ESC>:w<CR>

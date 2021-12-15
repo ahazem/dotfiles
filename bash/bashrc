@@ -3,5 +3,5 @@
 # Reload the profile whenever starting a new session
 [ -n "$PS1" ] && source ~/.bash_profile
 
-# Added by serverless binary installer
-export PATH="$HOME/.serverless/bin:$PATH"
+# serverless + rust
+export PATH="$HOME/.serverless/bin:$HOME/.cardgo/env:$PATH"

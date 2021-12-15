@@ -35,8 +35,8 @@ fi
 # Silence the deperacation warning for bash
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
-# Added by serverless binary installer
-export PATH="$HOME/.serverless/bin:/usr/local/sbin:$PATH"
+# serverless + rust + sbin
+export PATH="$HOME/.serverless/bin:$HOME/.cargo/env:/usr/local/sbin:$PATH"
 
 # Initialize nodenv
 eval "$(nodenv init -)"

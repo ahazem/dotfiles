@@ -18,3 +18,5 @@ Here are most of the steps you need to follow when setting up a new device:
   - install gnupg (via homebrew)
   - import private pgp key (find key first)
   - install editorconfig plugin (vscode)
+  - install rbenv
+  - install kubectl (if needed)

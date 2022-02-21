@@ -42,7 +42,7 @@ export PATH="$HOME/.serverless/bin:$HOME/.cargo/env:/usr/local/sbin:$PATH"
 # eval "$(nodenv init -)"
 
 # Initiaize rbenv
-# eval "$(rbenv init -)"
+eval "$(rbenv init -)"
 
 # Always start ssh-agent
 [ -z "$SSH_AUTH_SOCK" ] && eval "$(ssh-agent -s)"

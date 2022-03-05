@@ -29,6 +29,11 @@ if [[ -r $bash_completion_path ]]; then
   source $bash_completion_path
 fi
 
+# Git completion
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
 # tmux
 [ -n "$TMUX" ] && export TERM=screen-256color
 

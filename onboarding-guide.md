@@ -20,3 +20,4 @@ Here are most of the steps you need to follow when setting up a new device:
   - install editorconfig plugin (vscode)
   - install rbenv
   - install kubectl (if needed)
+  - install starship

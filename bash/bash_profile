@@ -1,12 +1,12 @@
 # bash_profile
 
 declare -a files=(
-  $HOME/.rvm/scripts/rvm # Load RVM into a shell session *as a function*
+  # $HOME/.rvm/scripts/rvm # Load RVM into a shell session *as a function*
   $HOME/.dotfiles/bash/bash_exports # Exports
   $HOME/.dotfiles/bash/bash_aliases # Aliases
   $HOME/.dotfiles/bash/bash_prompt # Prompt
-  $HOME/documents/dev/github.com/jdxcode/gh/bash/gh.bash # Use gh to move around github repos
-  $HOME/documents/dev/github.com/jdxcode/gh/completions/gh.bash
+  # $HOME/documents/dev/github.com/jdxcode/gh/bash/gh.bash # Use gh to move around github repos
+  # $HOME/documents/dev/github.com/jdxcode/gh/completions/gh.bash
 )
 
   #$HOME/.dotfiles/bash/bash_paths  # Path modifications
@@ -40,8 +40,8 @@ fi
 # Silence the deperacation warning for bash
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
-# serverless + rust + sbin
-export PATH="$HOME/.serverless/bin:$HOME/.cargo/env:/usr/local/sbin:$PATH"
+# serverless + rust + sbin + go
+export PATH="$HOME/.serverless/bin:$HOME/.cargo/env:/usr/local/sbin:$PATH:$GOPATH/bin:$GOROOT/bin"
 
 # Initialize nodenv
 # eval "$(nodenv init -)"

@@ -3,7 +3,7 @@ Onboarding Guide
 
 Here are most of the steps you need to follow when setting up a new device:
 
-  - change shell to bash
+  - change shell to bash (install latest version of bash first)
   - install brew
   - install github cli (via brew)
   - clone dotfiles

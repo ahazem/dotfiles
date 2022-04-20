@@ -15,7 +15,8 @@ Here are most of the steps you need to follow when setting up a new device:
     - load preferences from custom folder (~/.dotfiles/iterm)
   - install nord colorscheme (for vscode)
   - install nord colorscheme (for iterm)
-  - install bash autocompletion
+  - install bash autocompletion:
+    - `brew install bash-completion@2`
   - install vim vundle
   - install tmux
   - install tpm

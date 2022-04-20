@@ -5,10 +5,14 @@ Here are most of the steps you need to follow when setting up a new device:
 
   - change shell to bash (install latest version of bash first)
   - install brew
-  - install github cli (via brew)
+  - install github cli (via brew) - if needed
   - clone dotfiles
-  - run make commands for dotfiles
-  - import iterm preferences (from dotfiles)
+  - run make commands for dotfiles:
+    - `make link-folder`
+    - `make link-dotfiles`
+  - import iterm preferences:
+    - import json profile and make it default
+    - load preferences from custom folder (~/.dotfiles/iterm)
   - install nord colorscheme (for vscode)
   - install nord colorscheme (for iterm)
   - install bash autocompletion

@@ -26,6 +26,6 @@ Here are most of the steps you need to follow when setting up a new device:
   - install gnupg (via homebrew)
   - import private pgp keys (find keys first)
   - install editorconfig plugin (vscode)
-  - install rbenv
+  - install asdf and asdf-ruby
   - install kubectl (if needed)
   - install starship

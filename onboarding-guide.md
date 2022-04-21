@@ -6,6 +6,8 @@ Here are most of the steps you need to follow when setting up a new device:
   - change shell to bash (install latest version of bash first)
   - install brew
   - install github cli (via brew) - if needed
+  - install gitlab cli (via brew) - if needed:
+    - `brew install glab`
   - clone dotfiles
   - run make commands for dotfiles:
     - `make link-folder`

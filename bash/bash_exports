@@ -4,11 +4,11 @@
 export EDITOR="vim"
 
 # Node Modules
-export NODE_PATH="/usr/local/lib/node_modules"
+# export NODE_PATH="/usr/local/lib/node_modules"
 
 # Go
-export GOPATH=~/go
-export GOROOT=/usr/local/opt/go/libexec
+# export GOPATH=~/go
+# export GOROOT=/usr/local/opt/go/libexec
 
 # Rails Assets
 export DEV_ASSET_DEBUG="false"

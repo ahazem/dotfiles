@@ -36,13 +36,16 @@ fi
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # serverless + rust + sbin + go
-export PATH="$HOME/.serverless/bin:$HOME/.cargo/env:/usr/local/sbin:$PATH:$GOPATH/bin:$GOROOT/bin"
+# export PATH="$HOME/.serverless/bin:$HOME/.cargo/env:/usr/local/sbin:$PATH:$GOPATH/bin:$GOROOT/bin"
+
+# serverless + rust + sbin
+export PATH="$HOME/.serverless/bin:$HOME/.cargo/env:/usr/local/sbin:$PATH"
 
 # Initialize nodenv
 # eval "$(nodenv init -)"
 
 # Initiaize rbenv
-eval "$(rbenv init -)"
+# eval "$(rbenv init -)"
 
 # Always start ssh-agent
 [ -z "$SSH_AUTH_SOCK" ] && eval "$(ssh-agent -s)"

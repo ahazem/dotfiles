@@ -5,3 +5,6 @@
 
 # serverless + rust
 export PATH="$HOME/.serverless/bin:$HOME/.cardgo/env:$PATH"
+
+# Added by GDK bootstrap
+source /Users/ahmed.hemdan/.asdf/asdf.sh

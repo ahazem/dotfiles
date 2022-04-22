@@ -1,7 +1,3 @@
-[user]
-  name = Ahmed Hemdan
-  email = ahazemm@gmail.com
-  signingKey = B8ECDE0D7EF677F7
 [core]
   excludesfile = $HOME/.gitignore
   autocrlf = input
@@ -23,3 +19,9 @@
   ff = only
 [init]
 	defaultBranch = main
+
+[include]
+  path = .gitconfig.personal
+
+[includeIf "gitdir:/Users/ahmed.hemdan/documents/dev/gitlab/**/.git"]
+  path = .gitconfig.gitlab

@@ -34,5 +34,7 @@ Here are most of the steps you need to follow when setting up a new device:
   - install starship
   - install gitlab-runner:
     - `brew install gitlab-runner`
+  - install releases-cli:
+    - https://docs.gitlab.com/ee/user/project/releases/release_cli.html
 
 

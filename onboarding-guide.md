@@ -32,3 +32,7 @@ Here are most of the steps you need to follow when setting up a new device:
   - install teleport (tsh)
   - install kubectl (if needed)
   - install starship
+  - install gitlab-runner:
+    - `brew install gitlab-runner`
+
+

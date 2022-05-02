@@ -6,8 +6,6 @@ Here are most of the steps you need to follow when setting up a new device:
   - change shell to bash (install latest version of bash first)
   - install brew
   - install github cli (via brew) - if needed
-  - install gitlab cli (via brew) - if needed:
-    - `brew install glab`
   - install gh or gl:
     - https://github.com/jdxcode/gh
   - clone dotfiles
@@ -32,9 +30,13 @@ Here are most of the steps you need to follow when setting up a new device:
   - install teleport (tsh)
   - install kubectl (if needed)
   - install starship
-  - install gitlab-runner:
-    - `brew install gitlab-runner`
-  - install releases-cli:
-    - https://docs.gitlab.com/ee/user/project/releases/release_cli.html
+
+  - gitlab specific
+    - install gitlab cli (via brew) - if needed:
+      - `brew install glab`
+    - install gitlab-runner:
+      - `brew install gitlab-runner`
+    - install releases-cli:
+      - https://docs.gitlab.com/ee/user/project/releases/release_cli.html
 
 

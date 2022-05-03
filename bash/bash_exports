@@ -17,7 +17,7 @@ export DEV_ASSET_DEBUG="false"
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-# GH
+# GH / GL
 export GH_BASE_DIR="$HOME/documents/dev"
 
 # GPG

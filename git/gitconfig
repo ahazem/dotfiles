@@ -21,7 +21,7 @@
 	defaultBranch = main
 
 [include]
-  path = .gitconfig.personal
+  path = .gitconfig-personal
 
-[includeIf "gitdir:/Users/ahmed.hemdan/documents/dev/gitlab/**/.git"]
-  path = .gitconfig.gitlab
+[includeIf "gitdir:/Users/ahmed.hemdan/dev/gitlab.com/**/**/.git"]
+  path = .gitconfig-work

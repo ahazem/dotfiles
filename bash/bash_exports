@@ -18,7 +18,7 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 # GH / GL
-export GH_BASE_DIR="$HOME/documents/dev"
+export GH_BASE_DIR="$HOME/dev"
 
 # GPG
 export GPG_TTY=$(tty)

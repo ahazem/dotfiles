@@ -23,5 +23,5 @@
 [include]
   path = .gitconfig-personal
 
-[includeIf "gitdir:/Users/ahmed.hemdan/dev/gitlab.com/**/**/.git"]
+[includeIf "gitdir:/Users/ahmed.hemdan/dev/work/**/**/.git"]
   path = .gitconfig-work

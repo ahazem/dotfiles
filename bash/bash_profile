@@ -9,6 +9,7 @@ declare -a files=(
   $HOME/.dotfiles/bash/gl.bash # Use gl to move around gitlab/work repos
   $HOME/.dotfiles/bash/completions/gh.bash
   $HOME/.dotfiles/bash/completions/gl.bash
+  $HOME/dev/work/gitlab-org/gdk/support/completions/gdk.bash
   $HOME/.asdf/asdf.sh
 )
 

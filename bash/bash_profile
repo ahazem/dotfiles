@@ -1,10 +1,8 @@
 # bash_profile
 
 declare -a files=(
-  # $HOME/.rvm/scripts/rvm # Load RVM into a shell session *as a function*
   $HOME/.dotfiles/bash/bash_exports # Exports
   $HOME/.dotfiles/bash/bash_aliases # Aliases
-  $HOME/.dotfiles/bash/bash_prompt # Prompt
   $HOME/.dotfiles/bash/gh.bash # Use gh to move around github/personal repos
   $HOME/.dotfiles/bash/gl.bash # Use gl to move around gitlab/work repos
   $HOME/.dotfiles/bash/completions/gh.bash
@@ -12,8 +10,6 @@ declare -a files=(
   $HOME/dev/work/gitlab-org/gdk/support/completions/gdk.bash
   $HOME/.asdf/asdf.sh
 )
-
-  #$HOME/.dotfiles/bash/bash_paths  # Path modifications
 
 # If these files are readable, source them
 for index in ${!files[*]}
@@ -26,7 +22,7 @@ done
 unset files
 
 # Use bash completion (install via homebrew)
-[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+[[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
 
 # Git completion
 if [ -f ~/.git-completion.bash ]; then
@@ -39,17 +35,11 @@ fi
 # Silence the deperacation warning for bash
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
-# serverless + rust + sbin + go
-# export PATH="$HOME/.serverless/bin:$HOME/.cargo/env:/usr/local/sbin:$PATH:$GOPATH/bin:$GOROOT/bin"
-
-# serverless + rust + sbin
-export PATH="$HOME/.serverless/bin:$HOME/.cargo/env:/usr/local/sbin:$PATH"
-
-# Initialize nodenv
-# eval "$(nodenv init -)"
-
-# Initiaize rbenv
-# eval "$(rbenv init -)"
+# Load brew
+export PATH="/opt/homebrew/bin:$PATH"
 
 # Always start ssh-agent
 [ -z "$SSH_AUTH_SOCK" ] && eval "$(ssh-agent -s)"
+
+# Load starship prompt
+eval "$(starship init bash)"

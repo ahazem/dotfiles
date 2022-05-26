@@ -1,13 +1,7 @@
 # bash_aliases
 
-# Bundler aliases
-alias bx='bundle exec'
-
-# PostgreSQL aliases
-alias pg='pg_ctl -D /usr/local/var/postgres/ -l /usr/local/var/postgres/server.log'
-
 # GitHub CLI alias
-alias ghx='/usr/local/bin/gh'
+# alias ghx='/usr/local/bin/gh'
 
 # Reload shell session
 alias reload='source ~/.bash_profile'

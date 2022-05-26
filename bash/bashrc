@@ -2,9 +2,3 @@
 
 # Reload the profile whenever starting a new session
 [ -n "$PS1" ] && source ~/.bash_profile
-
-# serverless + rust
-export PATH="$HOME/.serverless/bin:$HOME/.cardgo/env:$PATH"
-
-# Added by GDK bootstrap
-source /Users/ahmed.hemdan/.asdf/asdf.sh

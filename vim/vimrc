@@ -60,7 +60,7 @@ Plugin 'fatih/vim-go.git'
 Plugin 'Shougo/neocomplcache'
 Plugin 'Shougo/neosnippet'
 Plugin 'Shougo/neosnippet-snippets'
-Plugin 'arcticicestudio/nord-vim'
+Plugin 'catppuccin/vim'
 "Plugin 'kien/ctrlp.vim'
 Plugin 'rking/ag.vim'
 Plugin 'vim-ctrlspace/vim-ctrlspace'
@@ -75,7 +75,7 @@ filetype indent on
 autocmd VimEnter * if !argc() | NERDTree | endif
 
 " Colorscheme configuration
-colorscheme nord
+colorscheme catppuccin_latte
 "set background=dark
 syntax on
 

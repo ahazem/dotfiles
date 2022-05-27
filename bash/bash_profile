@@ -8,7 +8,7 @@ declare -a files=(
   $HOME/.dotfiles/bash/completions/gh.bash
   $HOME/.dotfiles/bash/completions/gl.bash
   $HOME/dev/work/gitlab-org/gdk/support/completions/gdk.bash
-  $HOME/.asdf/asdf.sh
+  /opt/homebrew/opt/asdf/libexec/asdf.sh
 )
 
 # If these files are readable, source them

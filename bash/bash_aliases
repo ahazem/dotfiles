@@ -5,3 +5,6 @@
 
 # Reload shell session
 alias reload='source ~/.bash_profile'
+
+# Fix vscode openning multiple dock icons
+alias code='open -b com.microsoft.VSCode "$@"'

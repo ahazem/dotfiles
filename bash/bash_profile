@@ -38,6 +38,9 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 # Load brew
 export PATH="/opt/homebrew/bin:$PATH"
 
+# Load rancher-desktop
+export PATH="$HOME/.rd/bin:$PATH"
+
 # Always start ssh-agent
 [ -z "$SSH_AUTH_SOCK" ] && eval "$(ssh-agent -s)"
 

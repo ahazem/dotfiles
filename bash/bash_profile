@@ -38,11 +38,23 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 # Load brew
 export PATH="/opt/homebrew/bin:$PATH"
 
-# Load rancher-desktop
-export PATH="$HOME/.rd/bin:$PATH"
-
 # Always start ssh-agent
 [ -z "$SSH_AUTH_SOCK" ] && eval "$(ssh-agent -s)"
 
+export STARSHIP_LOG=error
+
 # Load starship prompt
 eval "$(starship init bash)"
+
+# Load base-preexec
+[[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
+
+# Load atuin
+eval "$(atuin init bash)"
+
+# Load analyzer-scripts
+export PATH="$HOME/dev/work/gitlab-org/secure/tools/analyzer-scripts:$PATH"
+
+# Load google cloud sdk (gcloud)
+source "$(brew --prefix)/share/google-cloud-sdk/path.bash.inc"
+source "$(brew --prefix)/share/google-cloud-sdk/completion.bash.inc"

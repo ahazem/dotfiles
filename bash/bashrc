@@ -2,3 +2,6 @@
 
 # Reload the profile whenever starting a new session
 [ -n "$PS1" ] && source ~/.bash_profile
+
+# Activate mise (previously rtx) when a session is started
+eval "$(/Users/ahmed.hemdan/.local/bin/mise activate bash)"

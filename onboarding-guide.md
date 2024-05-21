@@ -28,7 +28,7 @@ Here are most of the steps you need to follow when setting up a new device:
   - install gnupg (via homebrew)
   - import private pgp keys (find keys first)
   - install editorconfig plugin (vscode)
-  - install asdf or rtx
+  - install asdf or rtx/mise
   - install teleport (tsh)
   - install kubectl (if needed)
   - install github cli (via brew) - if needed
@@ -41,5 +41,3 @@ Here are most of the steps you need to follow when setting up a new device:
       - `brew install gitlab-runner`
     - install releases-cli:
       - https://docs.gitlab.com/ee/user/project/releases/release_cli.html
-
-

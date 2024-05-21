@@ -58,3 +58,6 @@ export PATH="$HOME/dev/work/gitlab-org/secure/tools/analyzer-scripts:$PATH"
 # Load google cloud sdk (gcloud)
 source "$(brew --prefix)/share/google-cloud-sdk/path.bash.inc"
 source "$(brew --prefix)/share/google-cloud-sdk/completion.bash.inc"
+
+# Added by OrbStack: command-line tools and integration
+source ~/.orbstack/shell/init.bash 2>/dev/null || :

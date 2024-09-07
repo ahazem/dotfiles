@@ -33,6 +33,8 @@ Here are most of the steps you need to follow when setting up a new device:
   - install kubectl (if needed)
   - install github cli (via brew) - if needed
   - install starship
+  - install git-delta
+  - install bat
 
   - gitlab specific
     - install gitlab cli (via brew) - if needed:

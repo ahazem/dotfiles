@@ -61,3 +61,6 @@ source "$(brew --prefix)/share/google-cloud-sdk/completion.bash.inc"
 
 # Added by OrbStack: command-line tools and integration
 source ~/.orbstack/shell/init.bash 2>/dev/null || :
+
+# Activate mise (previously rtx) when a session is started
+eval "$(mise activate bash)"

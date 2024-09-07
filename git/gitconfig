@@ -1,6 +1,7 @@
 [core]
   excludesfile = $HOME/.gitignore
   autocrlf = input
+  pager = delta
 [credential]
   helper = osxkeychain
 [alias]
@@ -19,9 +20,17 @@
   ff = only
 [init]
 	defaultBranch = main
-
 [include]
   path = .gitconfig-personal
-
 [includeIf "gitdir:/Users/ahmed.hemdan/dev/work/**/**/.git"]
   path = .gitconfig-work
+[maintenance]
+	repo = /Users/ahmed.hemdan/dev/work/gitlab-org/gdk
+	repo = /Users/ahmed.hemdan/dev/work/gitlab-org/gdk/gitlab
+[delta]
+  line-numbers = true
+  hyperlinks = true
+  features = catppuccin-macchiato
+[include]
+    path = ~/.dotfiles/delta/themes.gitconfig
+    path = ~/.dotfiles/delta/catppuccin.gitconfig

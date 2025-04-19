@@ -6,8 +6,7 @@ declare -a files=(
   $HOME/.dotfiles/bash/gh.bash # Use gh to move around github/personal repos
   $HOME/.dotfiles/bash/gl.bash # Use gl to move around gitlab/work repos
   $HOME/.dotfiles/bash/completions/gh.bash
-  $HOME/.dotfiles/bash/completions/gl.bash
-  $HOME/dev/work/gitlab-org/gdk/support/completions/gdk.bash
+  $HOME/.dotfiles/bash/completions/gl.bas
 )
 
 # If these files are readable, source them
@@ -51,6 +50,7 @@ eval "$(starship init bash)"
 # Load atuin
 eval "$(atuin init bash)"
 
+<<<<<<< HEAD
 # Load analyzer-scripts
 export PATH="$HOME/dev/work/gitlab-org/secure/tools/analyzer-scripts:$PATH"
 
@@ -63,3 +63,7 @@ eval "$(/opt/homebrew/bin/mise activate bash)"
 
 # Add rancher-desktop to PATH
 export PATH="$HOME/.rd/bin:$PATH"
+=======
+# Activate mise when a session is started
+eval "$(mise activate bash)"
+>>>>>>> 57641b4 (Update settings for a new machine)

@@ -1,6 +1,6 @@
 # shamelessly stolen from jdxcode/gh (had to customize user path)
 
-GH_BASE_DIR=${GH_BASE_DIR:-$HOME/src}
+GH_BASE_DIR=${GH_BASE_DIR:-$HOME/dev}
 GH_PROTO=${GH_PROTO:-"ssh"}
 function gh() {
   if [[ $# -ne 2 ]]; then

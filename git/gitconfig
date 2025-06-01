@@ -4,6 +4,7 @@
   pager = delta
 [credential]
   helper = osxkeychain
+	helper = /usr/local/share/gcm-core/git-credential-manager
 [alias]
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --abbrev-commit
 [color]

@@ -1,4 +1,5 @@
 " Misc configuration
+set nocompatible
 set hidden
 set number
 set showmatch
@@ -19,69 +20,52 @@ set nowritebackup
 set noswapfile
 set backspace=indent,eol,start
 set incsearch
+set termguicolors
 
 let mapleader=","
 
-" Vundle + CtrlSpace specific configuration
-set nocompatible
-filetype off
+" For minpac
+set packpath^=~/.vim
+packadd minpac
 
-set rtp+=~/.vim/bundle/vundle.vim/
-call vundle#rc()
+" Initialize minpac
+call minpac#init()
 
-" Let Vundle manage Vundle
-Plugin 'VundleVim/Vundle.vim'
+" Let minpac manage minpac itself
+call minpac#add('k-takata/minpac', {'type': 'start'}) "
 
-" Manage other bundles too
-"Plugin 'Lokaltog/vim-powerline'
-Plugin 'scrooloose/nerdtree'
-Plugin 'tpope/vim-surround.git'
-Plugin 'tpope/vim-rake.git'
-Plugin 'tpope/vim-rails.git'
+" Plugins
+call minpac#add('scrooloose/nerdtree')
+call minpac#add('scrooloose/nerdcommenter')
+call minpac#add('tpope/vim-surround')
+call minpac#add('tpope/vim-rake')
+call minpac#add('tpope/vim-rails')
+call minpac#add('dense-analysis/ale')
+call minpac#add('godlygeek/tabular')
+call minpac#add('ervandew/supertab')
+call minpac#add('vim-ruby/vim-ruby')
+call minpac#add('Raimondi/delimitMate')
+call minpac#add('tpope/vim-endwise')
+call minpac#add('mattn/emmet-vim')
+call minpac#add('fatih/vim-go')
+call minpac#add('catppuccin/vim')
+call minpac#add('rking/ag.vim')
+call minpac#add('vim-ctrlspace/vim-ctrlspace')
+call minpac#add('vim-airline/vim-airline')
 
-" JavaScript related packages (React / JSX)
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
-Plugin 'scrooloose/nerdcommenter.git'
-"Plugin 'kchmck/vim-coffee-script'
-Plugin 'scrooloose/syntastic.git'
-Plugin 'godlygeek/tabular.git'
-Plugin 'ervandew/supertab'
-Plugin 'vim-ruby/vim-ruby.git'
-Plugin 'xenoterracide/html.vim'
-Plugin 'instant-markdown.vim'
-Plugin 'delimitMate.vim'
-Plugin 'tpope/vim-endwise.git'
-Plugin 'nono/vim-handlebars.git'
-Plugin 'mattn/emmet-vim.git'
-Plugin 'dsawardekar/ember.vim'
-Plugin 'honza/dockerfile.vim'
-Plugin 'fatih/vim-go.git'
-Plugin 'Shougo/neocomplcache'
-Plugin 'Shougo/neosnippet'
-Plugin 'Shougo/neosnippet-snippets'
-Plugin 'catppuccin/vim'
-"Plugin 'kien/ctrlp.vim'
-Plugin 'rking/ag.vim'
-Plugin 'vim-ctrlspace/vim-ctrlspace'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-
-" Enable filetype plugins
-filetype plugin on
-filetype indent on
+" Enable filetype (for minpac)
+filetype plugin indent on
 
 " NERDTree configuration
 autocmd VimEnter * if !argc() | NERDTree | endif
 
 " Colorscheme configuration
-colorscheme catppuccin_latte
-"set background=dark
+colorscheme catppuccin_frappe
 syntax on
 
-" Powerline configuration
-"let g:Powerline_symbols='fancy'
-"let g:Powerline_colorscheme='zenburn'
+
+" Set airline theme
+let g:airline_theme='catppuccin_frappe'
 
 " Supertab configuration
 let g:SuperTabDefaultCompletionType='<C-X><C-O>'
@@ -102,10 +86,6 @@ inoremap <Leader>se <ESC>:w<CR>
 noremap <Leader>y :.w !pbcopy<CR><CR>
 noremap <Leader>p :r !pbpaste<CR>
 vmap <Leader>y :w !pbcopy<CR><CR>
-
-" ctrpl mappings
-"let g:ctrlp_map = '<c-p>'
-"let g:ctrlp_cmd = 'CtrlP'
 
 " Zencoding mappings
 let g:user_zen_expandabbr_key = '<Leader>x'
@@ -130,10 +110,6 @@ let g:CtrlSpaceSearchTiming = 500
 
 " Specify file path formatter
 let g:airline#extensions#tabline#formatter = 'unique_tail'
-
-" Use neosnippet instead of utilsnips which is broken on older versions of
-" python (it seems)
-let g:go_snippet_engine = "neosnippet"
 
 " Go mappings
 autocmd FileType go nmap <Leader>r <Plug>(go-run)

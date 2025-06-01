@@ -8,7 +8,6 @@ declare -a files=(
   $HOME/.dotfiles/bash/completions/gh.bash
   $HOME/.dotfiles/bash/completions/gl.bash
   $HOME/dev/work/gitlab-org/gdk/support/completions/gdk.bash
-  /opt/homebrew/opt/asdf/libexec/asdf.sh
 )
 
 # If these files are readable, source them
@@ -32,7 +31,7 @@ fi
 # tmux
 [ -n "$TMUX" ] && export TERM=screen-256color
 
-# Silence the deperacation warning for bash
+# Silence the deprecation warning for bash
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # Load brew
@@ -46,7 +45,7 @@ export STARSHIP_LOG=error
 # Load starship prompt
 eval "$(starship init bash)"
 
-# Load base-preexec
+# Load bash-preexec
 [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
 
 # Load atuin
@@ -56,11 +55,8 @@ eval "$(atuin init bash)"
 export PATH="$HOME/dev/work/gitlab-org/secure/tools/analyzer-scripts:$PATH"
 
 # Load google cloud sdk (gcloud)
-source "$(brew --prefix)/share/google-cloud-sdk/path.bash.inc"
-source "$(brew --prefix)/share/google-cloud-sdk/completion.bash.inc"
+# source "$(brew --prefix)/share/google-cloud-sdk/path.bash.inc"
+# source "$(brew --prefix)/share/google-cloud-sdk/completion.bash.inc"
 
-# Added by OrbStack: command-line tools and integration
-source ~/.orbstack/shell/init.bash 2>/dev/null || :
-
-# Activate mise (previously rtx) when a session is started
+# Activate mise when a session is started
 eval "$(mise activate bash)"

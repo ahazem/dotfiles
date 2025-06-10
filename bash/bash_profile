@@ -4,9 +4,7 @@ declare -a files=(
   $HOME/.dotfiles/bash/bash_exports # Exports
   $HOME/.dotfiles/bash/bash_aliases # Aliases
   $HOME/.dotfiles/bash/gh.bash # Use gh to move around github/personal repos
-  $HOME/.dotfiles/bash/gl.bash # Use gl to move around gitlab/work repos
   $HOME/.dotfiles/bash/completions/gh.bash
-  $HOME/.dotfiles/bash/completions/gl.bas
 )
 
 # If these files are readable, source them
@@ -34,11 +32,12 @@ fi
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # Load brew, mise, pg17
-export PATH="/opt/homebrew/bin:$(mise where go):/opt/homebrew/opt/postgresql@17/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$(mise where go):$(brew --prefix)/opt/postgresql@17/bin:$PATH"
 
 # Always start ssh-agent
 [ -z "$SSH_AUTH_SOCK" ] && eval "$(ssh-agent -s)"
 
+# Adjust starship logging
 export STARSHIP_LOG=error
 
 # Load starship prompt
@@ -51,4 +50,4 @@ eval "$(starship init bash)"
 eval "$(atuin init bash)"
 
 # Activate mise when a session is started
-eval "$(mise activate bash)"
+eval "$(/opt/homebrew/bin/mise activate bash)"

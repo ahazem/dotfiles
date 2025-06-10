@@ -5,3 +5,7 @@ link-folder:
 
 link-dotfiles:
 	$(HOME)/.dotfiles/dotfiles.sh
+
+link-atuin:
+	mkdir -p $(HOME)/.config
+	ln -s $(PWD)/atuin $(HOME)/.config

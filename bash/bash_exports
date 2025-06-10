@@ -3,13 +3,6 @@
 # Make vim the default editor.
 export EDITOR="vim"
 
-# Go
-# export GOPATH=~/go
-# export GOROOT=/usr/local/opt/go/libexec
-
-# Rails Assets
-export DEV_ASSET_DEBUG="false"
-
 # Python (Locale)
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8

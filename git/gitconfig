@@ -4,6 +4,7 @@
   pager = delta
 [credential]
   helper = osxkeychain
+	helper = /usr/local/share/gcm-core/git-credential-manager
 [alias]
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --abbrev-commit
 [color]
@@ -27,6 +28,8 @@
 [maintenance]
 	repo = /Users/ahmed.hemdan/dev/work/gitlab-org/gdk
 	repo = /Users/ahmed.hemdan/dev/work/gitlab-org/gdk/gitlab
+[interactive]
+    diffFilter = delta --color-only
 [delta]
   line-numbers = true
   hyperlinks = true

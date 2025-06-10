@@ -17,10 +17,12 @@ Here are most of the steps you need to follow when setting up a new device:
     - load preferences from custom folder (~/.dotfiles/iterm)
   - install catppuccin colorscheme (for vscode)
   - install catppuccin colorscheme (for iterm)
+  - install atuin
+  - install catppuccin colorscheme (for atuin)
   - install bash autocompletion:
     - `brew install bash-completion@2`
   - install git completion
-  - install vim vundle
+  - install minpac
   - install catppuccin colorscheme (for vim)
   - install tmux
   - install catppuccin colorscheme (for tmux)
@@ -28,7 +30,7 @@ Here are most of the steps you need to follow when setting up a new device:
   - install gnupg (via homebrew)
   - import private pgp keys (find keys first)
   - install editorconfig plugin (vscode)
-  - install asdf or rtx/mise
+  - install mise
   - install teleport (tsh)
   - install kubectl (if needed)
   - install github cli (via brew) - if needed
@@ -36,7 +38,7 @@ Here are most of the steps you need to follow when setting up a new device:
   - install git-delta
   - install bat
 
-  - gitlab specific
+  - gitlab specific:
     - install gitlab cli (via brew) - if needed:
       - `brew install glab`
     - install gitlab-runner:

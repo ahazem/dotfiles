@@ -51,3 +51,9 @@ eval "$(atuin init bash)"
 
 # Activate mise when a session is started
 eval "$(/opt/homebrew/bin/mise activate bash)"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+. "$HOME/.cargo/env"

@@ -1,5 +1,8 @@
 # bash_exports
 
+# Load brew
+export PATH="/opt/homebrew/bin:$PATH"
+
 # Make vim the default editor.
 export EDITOR="vim"
 
@@ -19,5 +22,18 @@ export GPG_TTY=$(tty)
 # Starship
 export STARSHIP_CONFIG="~/.starship.toml"
 
+# Load mise, pg17
+export PATH="$(mise where go):$(brew --prefix)/opt/postgresql@17/bin:$PATH"
+
 # GO
 export GOROOT="$(mise where go)"
+
+# Adjust starship logging
+export STARSHIP_LOG=error
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Silence the deprecation warning for bash
+export BASH_SILENCE_DEPRECATION_WARNING=1

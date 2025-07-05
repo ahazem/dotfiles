@@ -28,17 +28,8 @@ fi
 # tmux
 [ -n "$TMUX" ] && export TERM=screen-256color
 
-# Silence the deprecation warning for bash
-export BASH_SILENCE_DEPRECATION_WARNING=1
-
-# Load brew, mise, pg17
-export PATH="$(brew --prefix)/bin:$(mise where go):$(brew --prefix)/opt/postgresql@17/bin:$PATH"
-
 # Always start ssh-agent
 [ -z "$SSH_AUTH_SOCK" ] && eval "$(ssh-agent -s)"
-
-# Adjust starship logging
-export STARSHIP_LOG=error
 
 # Load starship prompt
 eval "$(starship init bash)"
@@ -50,10 +41,6 @@ eval "$(starship init bash)"
 eval "$(atuin init bash)"
 
 # Activate mise when a session is started
-eval "$(/opt/homebrew/bin/mise activate bash)"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
+eval "$(mise activate bash)"
 
 . "$HOME/.cargo/env"

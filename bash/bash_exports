@@ -3,6 +3,9 @@
 # Load brew
 export PATH="/opt/homebrew/bin:$PATH"
 
+# Load local binaries
+export PATH="~/.local/bin:$PATH"
+
 # Make vim the default editor.
 export EDITOR="vim"
 

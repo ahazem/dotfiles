@@ -58,8 +58,17 @@ export PATH="$HOME/dev/work/gitlab-org/secure/tools/analyzer-scripts:$PATH"
 # source "$(brew --prefix)/share/google-cloud-sdk/path.bash.inc"
 # source "$(brew --prefix)/share/google-cloud-sdk/completion.bash.inc"
 
+# Add mise shims to PATH
+export PATH="$HOME/.local/mise/shims:$PATH"
+
 # Activate mise when a session is started
 eval "$(/opt/homebrew/bin/mise activate bash)"
 
 # Add rancher-desktop to PATH
 export PATH="$HOME/.rd/bin:$PATH"
+
+# Added by GitLab Knowledge Graph installer
+export PATH="$HOME/.local/bin:$PATH"
+
+# Add bun to PATH
+export PATH="$HOME/.bun/bin:$PATH"

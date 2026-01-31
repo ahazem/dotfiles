@@ -67,7 +67,7 @@ eval "$(/opt/homebrew/bin/mise activate bash)"
 # Add rancher-desktop to PATH
 export PATH="$HOME/.rd/bin:$PATH"
 
-# Added by GitLab Knowledge Graph installer
+# Add local binaries
 export PATH="$HOME/.local/bin:$PATH"
 
 # Add bun to PATH

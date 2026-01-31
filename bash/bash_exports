@@ -15,3 +15,6 @@ export GPG_TTY=$(tty)
 
 # Starship
 export STARSHIP_CONFIG="~/.starship.toml"
+
+# sentry
+export SENTRY_URL=https://new-sentry.gitlab.net

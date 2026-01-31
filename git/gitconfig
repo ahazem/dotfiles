@@ -37,3 +37,11 @@
 [include]
     path = ~/.dotfiles/delta/themes.gitconfig
     path = ~/.dotfiles/delta/catppuccin.gitconfig
+[credential "https://ops.gitlab.net"]
+	provider = generic
+[safe]
+	directory = 
+[credential "http://gdk.test:3000"]
+	provider = generic
+[credential "https://staging.gitlab.com"]
+	provider = generic

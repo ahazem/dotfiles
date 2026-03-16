@@ -9,3 +9,7 @@ link-dotfiles:
 link-atuin:
 	mkdir -p $(HOME)/.config
 	ln -s $(PWD)/atuin $(HOME)/.config
+
+link-opencode-plugins:
+	mkdir -p $(HOME)/.config
+	ln -s $(PWD)/opencode/plugins $(HOME)/.config/opencode/

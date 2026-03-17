@@ -5,3 +5,7 @@ alias reload='source ~/.bash_profile'
 
 # Fix vscode openning multiple dock icons
 alias code='open -b com.microsoft.VSCode "$@"'
+
+# Add aliases for accessing different organizations
+alias cc-gl-corp="CLAUDE_PROFILE=corp claude"
+alias cc-gl-dev="CLAUDE_PROFILE=dev claude"

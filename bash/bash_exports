@@ -15,6 +15,16 @@ export GPG_TTY=$(tty)
 
 # Starship
 export STARSHIP_CONFIG="~/.starship.toml"
+export STARSHIP_LOG=error
 
 # sentry
 export SENTRY_URL=https://new-sentry.gitlab.net
+
+# 1Password CLI
+export OP_BIOMETRIC_UNLOCK_ENABLED=true
+
+# Gemini (Vertex AI)
+export GOOGLE_APPLICATION_CREDENTIALS="$HOME/.config/gcloud/application_default_credentials.json"
+export GOOGLE_CLOUD_PROJECT="dev-ai-research-0e2f8974"
+export GOOGLE_CLOUD_LOCATION="global"
+export VERTEX_LOCATION="global"

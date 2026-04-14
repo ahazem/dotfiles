@@ -40,11 +40,6 @@ export PATH="/opt/homebrew/bin:$PATH"
 # Always start ssh-agent
 [ -z "$SSH_AUTH_SOCK" ] && eval "$(ssh-agent -s)"
 
-export STARSHIP_LOG=error
-
-# Load starship prompt
-eval "$(starship init bash)"
-
 # Load bash-preexec
 [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
 
@@ -72,3 +67,14 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # Add bun to PATH
 export PATH="$HOME/.bun/bin:$PATH"
+
+# Load a full terminal environment, or keep it minimal for Agentic AI in IDEs
+if [[ "$TERM_PROGRAM" == "vscode" ]]; then
+  echo "IDE agentic environment detected, not loading full shell integrations"
+
+  # Keep only essential settings for agents
+  export PS1='\$ ' # Minimal prompt
+else
+  # Load starship prompt
+  eval "$(starship init bash)"
+fi
